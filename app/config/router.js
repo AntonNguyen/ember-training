@@ -5,6 +5,9 @@ App.Router.map(function() {
     this.route('edit');
   });
 
-
+  this.route('clients');
+  this.resource('client', { path: '/client/:client_id'}, function() {
+    this.route('edit');
+  });
 
 });

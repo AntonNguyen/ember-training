@@ -1,0 +1,12 @@
+<h3>{{name}}</h3>
+Are you ready to edit!?<br/>
+
+<p>Name: {{input type="text" value=name}}</p>
+<p>Email: {{input type="email" value=email}}</p>
+
+<p>isDirty? {{isDirty}}</p>
+
+<button {{action "save" model}}>SAVE OUR DATA!</button>
+<a href="#" {{action "cancel" model}}>Cancel</a>
+
+<br/>{{link-to 'Back to Clients!' 'clients'}}
